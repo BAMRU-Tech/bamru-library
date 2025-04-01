@@ -3,9 +3,9 @@
 
 # base config in partials/branding, partials/head
 branding:
-  name: Library
-  prettyName: Team Library
-  org: Your Organization
+  name: BAMRU
+  prettyName: BAMRU
+  org: BAMRU
   icon: /assets/images/icon-logo.svg
   favicon: /assets/images/library.ico
 
@@ -20,6 +20,9 @@ landing:
       style: button
     - tag: featured
       label: Useful Docs
+      style: docs
+    - tag: tech
+      label: Tech
       style: docs
 
 
