@@ -16,10 +16,10 @@ landing:
   viewAll: View All
   quickLink: <a href="/overview">start here</a>
   modules:
-    - tag: checklist
+    - tag: quick-ref
       label: "Quick Reference"
       style: docs
-    - tag: skill
+    - tag: tech-ref
       label: "Technical Reference"
       style: button
     - tag: featured
