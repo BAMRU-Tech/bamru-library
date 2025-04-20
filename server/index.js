@@ -5,7 +5,7 @@ require('dotenv').config()
 
 const express = require('express')
 const csp = require('helmet-csp')
-const helmet = require("helmet")
+const helmet = require('helmet')
 
 const {middleware: cache} = require('./cache')
 const {getMeta} = require('./list')
