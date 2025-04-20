@@ -42,7 +42,6 @@ app.get(formatUrl('/healthcheck'), (req, res) => {
 // security headers, content security policy and auth
 app.use(csp({directives: customCsp}))
 app.use(helmet())
-app.disable('x-powered-by') // remove header that makes it easier for atttackers
 app.use(formatUrl('/'), userAuth)
 
 preload.forEach((middleware) => app.use(middleware))
