@@ -14,6 +14,7 @@ branding:
 landing:
   tagline: <b>BAMRU Document Repository</b></br>Overview and usage
   viewAll: View All
+  viewAllTag: section
   quickLink: <a href="/overview">start here</a>
   modules:
     - tag: quick-ref
@@ -22,7 +23,7 @@ landing:
     - tag: tech-ref
       label: "Technical Reference"
       style: button
-    - tag: featured
+    - tag: section
       label: Sections
       style: docs
 

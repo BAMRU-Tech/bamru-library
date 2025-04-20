@@ -29,7 +29,7 @@ const itemsLimited = items.slice(0, 6)
         </li>
     <% }
     }) 
-    if (tag === 'featured') { %>
+    if (tag === template('landing.viewAllTag')) { %>
       <li><a class="button btn-homepage" href="<%= formatUrl('/categories') %>"><%- template('landing.viewAll') %></a></li>
     <% } %>
   </ul>
