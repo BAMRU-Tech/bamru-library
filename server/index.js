@@ -5,6 +5,7 @@ require('dotenv').config()
 
 const express = require('express')
 const csp = require('helmet-csp')
+const helmet = require("helmet")
 
 const {middleware: cache} = require('./cache')
 const {getMeta} = require('./list')
@@ -38,7 +39,10 @@ app.get(formatUrl('/healthcheck'), (req, res) => {
   res.send('OK')
 })
 
+// security headers, content security policy and auth
 app.use(csp({directives: customCsp}))
+app.use(helmet())
+app.disable('x-powered-by') // remove header that makes it easier for atttackers
 app.use(formatUrl('/'), userAuth)
 
 preload.forEach((middleware) => app.use(middleware))
